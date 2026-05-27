@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
+import { ToastHost } from "@/components/ui/Toast";
 import { useTheme } from "@/hooks/useTheme";
 
 const queryClient = new QueryClient();
@@ -52,6 +53,7 @@ export default function RootLayout() {
               options={{ presentation: "modal" }}
             />
           </Stack>
+          <ToastHost />
         </QueryClientProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
