@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: 243 238 252;
+    --color-surface: 255 255 255;
+    --color-surface-muted: 247 244 252;
+    --color-border: 235 230 245;
+    --color-text: 26 22 37;
+    --color-text-muted: 120 113 133;
+    --color-primary: 242 95 176;
+    --color-primary-end: 167 123 230;
+    --color-on-primary: 255 255 255;
+    --color-accent: 167 123 230;
+  }
+
+  .dark:root,
+  .dark {
+    --color-background: 18 16 26;
+    --color-surface: 30 27 41;
+    --color-surface-muted: 38 34 51;
+    --color-border: 48 43 64;
+    --color-text: 245 243 250;
+    --color-text-muted: 165 158 181;
+    --color-primary: 242 95 176;
+    --color-primary-end: 167 123 230;
+    --color-on-primary: 255 255 255;
+    --color-accent: 200 170 255;
+  }
+}

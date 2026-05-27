@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Image Magic",
+    "slug": "image-magic",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "imagemagic",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F3EEFC"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.imagemagic.app"
+    },
+    "android": {
+      "package": "com.imagemagic.app",
+      "adaptiveIcon": {
+        "backgroundImage": "./assets/android-icon-background.png",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Image Magic needs access to your photos so you can transform them."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Image Magic saves your transformed images to your library.",
+          "savePhotosPermission": "Image Magic saves your transformed images to your library."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
