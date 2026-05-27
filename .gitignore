@@ -42,3 +42,6 @@ yarn-error.*
 
 # local env files
 .env
+
+# generated UI sample mockups
+ui-samples/
